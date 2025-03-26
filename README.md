@@ -25,18 +25,65 @@ Welcome to the **Ubuntu Environment Setup Scripts** project! This repository con
 ---
 
 ## 🚀 Usage Instructions
-
 ### **1. global_env_script.sh**
    - Automatically executed by Vagrant during provisioning.
    - Ensure Vagrant is installed and properly configured before running.
 
-### **2. user_env_script.sh**
-   - Run this script after completing the global environment setup.
-   - Execute it as the user whose environment needs to be configured.
+### **How to Run Vagrant**
+   1. Install Vagrant by following the [official installation guide](https://developer.hashicorp.com/vagrant/docs/installation).
+   2. Navigate to the project directory:
+      ```bash
+      cd /home/vagrant/linuxenv-setup
+      ```
+   3. Initialize and start the Vagrant environment:
+      ```bash
+      vagrant up
+      ```
+   4. SSH into the virtual machine:
+      ```bash
+      vagrant ssh
+      ```
+   5. The `global_env_script.sh` will run automatically during provisioning.
+   ### **2. user_env_script.sh**
+      - Run this script after completing the global environment setup.
+      - Execute it as the user whose environment needs to be configured.
+
+   #### **How to Run user_env_script.sh**
+      1. SSH into the virtual machine:
+         ```bash
+         vagrant ssh
+         ```
+      2. Switch to the user whose environment needs to be configured (if necessary):
+         ```bash
+         su - <username>
+         ```
+      3. Navigate to the script's directory:
+         ```bash
+         cd /home/vagrant/linuxenv-setup
+         ```
+      4. Execute the script:
+         ```bash
+         bash user_env_script.sh
+         ```
 
 ### **3. create_user_script.sh**
    - Use this script to create a new user account.
    - Follow the interactive prompts to complete the setup.
+
+#### **How to Run create_user_script.sh**
+   1. SSH into the virtual machine:
+      ```bash
+      vagrant ssh
+      ```
+   2. Navigate to the script's directory:
+      ```bash
+      cd /home/vagrant/linuxenv-setup
+      ```
+   3. Execute the script:
+      ```bash
+      bash create_user_script.sh
+      ```
+   4. Follow the on-screen prompts to create a new user account.
 
 ---
 
@@ -59,5 +106,3 @@ Contributions are welcome! If you encounter any issues or have ideas for improve
 - 📧 Email: [crooper22@gmail.com](mailto:crooper22@gmail.com)
 
 ---
-
-Thank you for using these scripts! Your feedback and contributions help make this project better.
