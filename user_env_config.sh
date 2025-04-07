@@ -73,7 +73,7 @@ function set_bashrc(){
                 git branch 2>/dev/null | sed -n '/\* /s///p'
             }
 
-            export PS1='\[\e[32m\]\u@\h \[\e[34m\]\w\[\e[33m\] $(parse_git_branch)\[\e[0m\] \$'"
+            export PS1='\[\e[32m\]\u@\h \[\e[34m\]\w\[\e[33m\] $(parse_git_branch)\[\e[0m\] \n $'"
     } 2>&1 | tee -a "$LOGFILE" 
     source "$USER_HOME/.bashrc"
 }
