@@ -13,9 +13,13 @@ Welcome to the **Ubuntu Environment Setup Scripts** project! This repository con
 ### 1. **global_env_script.sh**
    - Installs essential applications and dependencies for the environment.
    - Designed to be executed during the provisioning process.
+   ### 2. **user_env_script.sh**
 
-### 2. **user_env_script.sh**
    - Configures user-specific settings and preferences.
+   - Tailored for customizing the environment of a specific user after the global setup.
+   - Should be run as the target user to apply configurations such as shell preferences, aliases, and environment variables.
+   - Useful for personalizing the development environment or applying user-level tweaks.
+   - Can be executed manually after provisioning is complete.  - Configures user-specific settings and preferences.
    - Tailored for the user whose environment needs customization.
 
 ### 3. **create_user_script.sh** *(Optional)*
