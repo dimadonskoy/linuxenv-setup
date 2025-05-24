@@ -15,7 +15,39 @@ Welcome to the **Ubuntu Environment Setup Scripts** project! This repository con
    - Designed to be executed during the provisioning process.
    ### 2. **user_env_script.sh**
 
-   - Configures user-specific settings and preferences.
+   [![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white)](https://www.gnu.org/software/bash/)
+   [![Ubuntu](https://img.shields.io/badge/Ubuntu-24.04-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)](https://ubuntu.com/)
+
+   This script configures user-specific settings and preferences after the global environment setup. It is intended to be run as the target user to personalize the development environment.
+
+   #### 📝 What it does
+
+   - Sets up shell preferences (e.g., `.bashrc`, `.profile`)
+   - Adds useful aliases and environment variables
+   - Installs user-level tools or utilities
+   - Applies customizations for the user's workflow
+
+   #### ⚙️ Usage
+
+   1. **SSH into the virtual machine:**
+      ```bash
+      vagrant ssh
+      ```
+   2. **Switch to the user whose environment you want to configure (if needed):**
+      ```bash
+      su - <username>
+      ```
+   3. **Navigate to the script directory:**
+      ```bash
+      cd /home/vagrant/linuxenv-setup
+      ```
+   4. **Run the script:**
+      ```bash
+      bash user_env_script.sh
+      ```
+
+   > **Tip:** Run this script after the global environment setup is complete to ensure all dependencies are in place.
+  - Configures user-specific settings and preferences.
    - Tailored for customizing the environment of a specific user after the global setup.
    - Should be run as the target user to apply configurations such as shell preferences, aliases, and environment variables.
    - Useful for personalizing the development environment or applying user-level tweaks.
