@@ -8,7 +8,13 @@ Welcome to the **Ubuntu Environment Setup Scripts** project! This repository con
 
 ---
 
-## 📜 Scripts Overview
+  
+### 4. **deploy.sh**
+   - Automates the deployment of the environment setup.
+   - Runs both `global_env_script.sh` and `user_env_script.sh` in sequence.
+   - Useful for quickly provisioning and configuring a new environment with a single command.
+   - Can be customized to include additional deployment steps as needed.
+
 
 ### 1. **global_env_script.sh**
    - Installs essential applications and dependencies for the environment.
