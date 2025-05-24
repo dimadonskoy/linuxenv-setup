@@ -1,6 +1,6 @@
-![Ubuntu](https://img.shields.io/badge/Ubuntu-24.04-orange)
-![Vagrant](https://img.shields.io/badge/Vagrant-Installed-blue)
-![Bash](https://img.shields.io/badge/Bash-Scripts-green)
+
+[![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white)](https://www.gnu.org/software/bash/)
+[![Ubuntu](https://img.shields.io/badge/Ubuntu-24.04-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)](https://ubuntu.com/)
 
 # Ubuntu Environment Setup Scripts
 
@@ -15,8 +15,6 @@ Welcome to the **Ubuntu Environment Setup Scripts** project! This repository con
    - Designed to be executed during the provisioning process.
    ### 2. **user_env_script.sh**
 
-   [![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white)](https://www.gnu.org/software/bash/)
-   [![Ubuntu](https://img.shields.io/badge/Ubuntu-24.04-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)](https://ubuntu.com/)
 
    This script configures user-specific settings and preferences after the global environment setup. It is intended to be run as the target user to personalize the development environment.
 
