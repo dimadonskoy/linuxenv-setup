@@ -9,20 +9,15 @@ Welcome to the **Ubuntu Environment Setup Scripts** project! This repository con
 ---
 
   
-### 4. **deploy.sh**
-   - Automates the deployment of the environment setup.
-   - Runs both `global_env_script.sh` and `user_env_script.sh` in sequence.
-   - Useful for quickly provisioning and configuring a new environment with a single command.
-   - Can be customized to include additional deployment steps as needed.
-
-
 ### 1. **global_env_script.sh**
    - Installs essential applications and dependencies for the environment.
    - Designed to be executed during the provisioning process.
-   ### 2. **user_env_script.sh**
 
-
-   This script configures user-specific settings and preferences after the global environment setup. It is intended to be run as the target user to personalize the development environment.
+### 2. **user_env_script.sh**
+   - Configures user-specific settings and preferences after the global environment setup.
+   - Should be run as the target user to apply configurations such as shell preferences, aliases, and environment variables.
+   - Useful for personalizing the development environment or applying user-level tweaks.
+   - Can be executed manually after provisioning is complete.
 
    #### 📝 What it does
 
@@ -51,16 +46,16 @@ Welcome to the **Ubuntu Environment Setup Scripts** project! This repository con
       ```
 
    > **Tip:** Run this script after the global environment setup is complete to ensure all dependencies are in place.
-  - Configures user-specific settings and preferences.
-   - Tailored for customizing the environment of a specific user after the global setup.
-   - Should be run as the target user to apply configurations such as shell preferences, aliases, and environment variables.
-   - Useful for personalizing the development environment or applying user-level tweaks.
-   - Can be executed manually after provisioning is complete.  - Configures user-specific settings and preferences.
-   - Tailored for the user whose environment needs customization.
 
 ### 3. **create_user_script.sh** *(Optional)*
    - Creates a new user in Ubuntu.
    - Ideal for scenarios where additional user accounts are required.
+
+### 4. **deploy.sh**
+   - Automates the deployment of the environment setup.
+   - Runs both `global_env_script.sh` and `user_env_script.sh` in sequence.
+   - Useful for quickly provisioning and configuring a new environment with a single command.
+   - Can be customized to include additional deployment steps as needed.
 
 ---
 
